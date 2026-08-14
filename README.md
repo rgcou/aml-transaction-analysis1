@@ -210,6 +210,11 @@ The data is structurally sound and ready for normalization and typology analysis
 ## Dataset
 
 The dataset used is the **IBM Transactions for Anti-Money Laundering** synthetic dataset (LI-Small variant). Due to its size (millions of rows), it is not included in this repository; it can be downloaded from its original source.
+The dataset is on Kaggle:
+
+https://www.kaggle.com/datasets/ealtman2019/ibm-transactions-for-anti-money-laundering-aml
+
+That's the "IBM Transactions for Anti-Money Laundering (AML)" dataset by Erik Altman, which is where the LI-Small_Trans.csv, LI-Small_accounts.csv, and the Patterns files come from.
 
 ## Tools
 
