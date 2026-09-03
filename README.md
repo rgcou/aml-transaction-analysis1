@@ -2,18 +2,18 @@
 
 Data profiling, integrity validation, wrangling and analysis on a financial transactions dataset, aimed at anti-money laundering (AML) analysis.
 
-This is an ongoing project. The goal is to explore a large financial-transactions dataset and, ultimately, to detect potentially suspicious (money-laundering) transactions, building each phase on a rigorously validated foundation.
+This is an ongoing project. The goal is to explore a large financial-transactions dataset and, ultimately, to detect potentially suspicious (money-laundering) transactions — building each phase on a rigorously validated foundation.
 
 ## Project phases
 
-The project is organized in phases. Each phase has its own reasoning and findings, and shares the accompanying notebook (the code and outputs).
+The project is organized in phases. Each phase has its own write-up (the reasoning and findings) and shares the accompanying notebook (the code and outputs).
 
-| Phase | Description |
-|---|---|
-| [Part I — Profiling and Integrity Validation](01-profiling-and-integrity-validation.md) | Structural exploration of both tables: cardinality profiling, key identification, functional dependencies, and cross-table referential integrity. Validates the data is structurally sound before modeling. |
-| [Part II — Cleaning](02-cleaning.md) | Structural arrangements, data-type conversion, filtering (scope), string cleaning, and null/duplicate handling. Prepares the data for the next phase. |
-| Part III — Normalization & typology analysis | *(upcoming)* |
-| Part IV — Detection | *(upcoming)* |
+[Part I — Profiling and Integrity Validation](01-profiling-and-integrity-validation.md) | Structural exploration of both tables: cardinality profiling, key identification, functional dependencies, and cross-table referential integrity. Validates the data is structurally sound before modeling. |
+[Part II — Cleaning](02-cleaning.md) | Structural arrangements, data-type conversion, filtering (scope), string cleaning, and null/duplicate handling. Prepares the data for the next phase. |
+[Part III — Typology Analysis: Fan-In](03-typology-analysis-fan-in.md) | Detection of the fan-in typology using a temporal definition: deriving a time threshold from the data, clustering incoming transactions with DBSCAN to isolate bursts, and comparing the results against the simulator's own structural labels. |
+Part IV — Typology Analysis: Fan-Out | *(upcoming)* |
+
+The full write-up for Part III, including all charts and output screenshots, is also available as **III Typology Analysis.pdf** in this repository.
 
 ## Dataset
 
@@ -27,4 +27,5 @@ Due to its size (millions of rows), the dataset is not included in this reposito
 
 ## Tools
 
-Python · Pandas · PowerBI
+Python · Pandas · scikit-learn (DBSCAN) · Power BI
+
